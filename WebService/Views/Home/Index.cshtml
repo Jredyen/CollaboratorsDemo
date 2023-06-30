@@ -3,6 +3,15 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4" id="datetime"></h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<script>
+    const datetime = document.querySelector('#datetime');
+    
+    var dateTimer = setInterval(function () {
+        const date = new Date();
+        datetime.innerHTML = `"${date}"`;
+    },1000)
+</script>
