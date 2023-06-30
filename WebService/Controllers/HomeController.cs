@@ -16,7 +16,7 @@ namespace WebService.Controllers
         public IActionResult Index()
         {
             string Stanley = "Stanley";
-            Stanley += " AAAA";
+            ViewBag.Stanley = Stanley+ " AAA";
             return View();
         }
 
